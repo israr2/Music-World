@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <title>Music World</title>
+  <meta charset="utf-8">
+ <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+ <link rel="stylesheet" href="style.css"></script>
+<!-- Boxicons CDN Link -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+  
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Index.html">Music World</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Music World</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        
+        <ul class="links">
+          <li><a href="Index.html">HOME</a></li>
+         <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rock.html">Rock</a></li>
+              <li><a href="jazz.html">Jazz</a></li>
+              <li><a href="pop.html">Pop</a></li>
+              <li><a href="rap.html">Rap</a></li>
+              <li><a href="classic.html">Classical</a></li>
+              <li><a href="instruments.html">Instruments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="artist.html">ARTISTS</a>
+          </li>
+          <li>
+                            <a href="album.html">ALBUMS</a>
+
+          </li>
+       
+          <li><a href="#">REGISTRATION</a>
+    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+    <ul class="js-sub-menu sub-menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      
+     
+    </ul>
+  </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+    
+  
+</script>
+<br><br><br><br>
+<section class="main">
+
+    <br><br>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/artists/YoungBoy.jpg" height="400" width="400" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>YoungBoy Never Broke Again</h1>
+                <h4>American rapper/singer</h4>
+                <h5>Born:20/04/1989</h5>
+                <h5>Lives in America</h5>
+                
+                <p>Kentrell DeSean Gaulden (born October 20, 1999), known professionally as YoungBoy Never Broke Again (also known as NBA YoungBoy or simply YoungBoy), is an American rapper, singer, and songwriter. Between 2015 and 2017, Gaulden released six independent mixtapes, and steadily garnered a cult following through his work. In late 2017, Gaulden was signed to Atlantic Records. In January 2018, Gaulden released the single "Outside Today", which peaked at number 31 on the Billboard Hot 100 chart. The song became the lead single for his debut studio album Until Death Call My Name (2018) which peaked at number 7 on the US Billboard 200.</p>
+            </div>
+        </div>
+<br><br>
+        <h2>Personal Details:</h2>
+        <p>Kentrell Gaulden was born on October 20, 1999, in Baton Rouge, Louisiana. Gaulden broke his neck while wrestling as a toddler, the injury requiring a head brace until the spine healed. The brace left permanent scars on his forehead.[9] Gaulden was raised mainly by his maternal grandmother due to his father being sentenced to 55 years in prison.[9] He dropped out of ninth grade and was arrested for robbery and sent to a detention center in Tallulah, Louisiana. While there, he began writing lyrics for his debut project.[1]
+
+            After he was released from the detention center, Gaulden's grandmother died of heart failure and Gaulden moved in with his friend and fellow Baton Rouge rapper, NBA 3Three (also known as OG 3Three). The two then used acts of criminality to begin to pay for studio time.</p>
+        <br>
+            <h2>Career Achievements:</h2>
+            <p>
+                Gaulden first began producing music with a microphone he bought from Walmart when he was fourteen years old.[9] He released his first mixtape, Life Before Fame in 2015. A string of other mixtapes followed including Mind of a Menace, Mind of a Menace 2, and Before I Go. Gaulden attracted attention with his October 2016 mixtape, 38 Baby[1][10] which featured fellow Baton Rouge natives, Boosie Badazz, Kevin Gates, and fellow rappers Stroke Tha Don and NBA 3Three.[11] A week later, Gaulden released another mixtape titled Mind of a Menace 3 on November 4, 2016. Gaulden quick rise to popularity could also be attributed to his "song-for-song rap beef" with fellow Baton Rouge rapper Scotty Cain in December 2015, in which songs from both rappers included death threats. Although no real violence ever occurred between the two Baton Rouge rappers, their feuding attracted a lot of attention.[10][11]
+
+In November 2016, Gaulden was arrested in Austin, Texas on suspicion of attempted first-degree murder in connection with an alleged drive-by shooting.[10][12] While in jail in East Baton Rouge Parish, Louisiana,[10] Gaulden re-released his two mixtapes, Before I Go and Mind of a Menace 3. Gaulden was released from prison in May 2017 after taking a plea deal and posting bail.[13] A week after leaving prison, Gaulden released the single, "Untouchable".[14]
+
+In July 2017, Gaulden released a video for his song, "41", that included cameos from notable artists including, Meek Mill, Young Thug, 21 Savage, Boosie Badazz, and Yo Gotti.[15] On August 3, 2017, he released his mixtape, AI YoungBoy which charted at 24 on the Billboard 200.[16] The single, "Untouchable", peaked at number 95 on the Billboard Hot 100 chart.[17] The second single from the project, "No Smoke", peaked at number 61 on the Billboard Hot 100.[
+            </p>
+
+            
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+  
+  <div class="container-fluid footer" >
+      
+      <div class="row footer-row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+              <h1>Music World</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit quaerat rem unde fugit numquam illo facere obcaecati, eos illum asperiores. Omnis veniam culpa neque repellat quisquam impedit obcaecati quis!</p>
+          </div>
+              
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-center" style="padding-left: 50px;">
+              <h1>Usful Links </h1>
+              
+              <ul class="footer-List">
+                  <ul class="footer-List">
+                  <li><a href="Index.html">Home </a> </li>
+                  <li><a href="artist.html">Artists</a></li>
+                  <li><a href="album.html">Albums</a></li>
+                  <li><a href="instruments.html">Instruments</a></li>
+              </ul>
+              </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-right" style="padding-left: 50px;">
+              <h1>Contact</h1>
+              
+              <ul class="contact-List" style="list-style-type: none;">
+                  <li>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                 <span>
+                  +92 300-458-8459
+                 </span>
+                   </li>
+                   <br>
+                  <li>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                      <span> example123@gmail.com</span>
+                  </li>
+                  <br>
+                  <li>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                      <span>457, City street ave , Karachi <br>
+                          Pakistan</span>
+                  </li>
+                  <li>
+                      <span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</footer>
+
+<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

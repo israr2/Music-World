@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <title>Music World</title>
+  <meta charset="utf-8">
+ <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+ <link rel="stylesheet" href="style.css"></script>
+<!-- Boxicons CDN Link -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+  
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Index.html">Music World</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Music World</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        
+        <ul class="links">
+          <li><a href="Index.html">HOME</a></li>
+         <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rock.html">Rock</a></li>
+              <li><a href="jazz.html">Jazz</a></li>
+              <li><a href="pop.html">Pop</a></li>
+              <li><a href="rap.html">Rap</a></li>
+              <li><a href="classic.html">Classical</a></li>
+              <li><a href="instruments.html">Instruments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="artist.html">ARTISTS</a>
+          </li>
+          <li>
+                            <a href="album.html">ALBUMS</a>
+
+          </li>
+       
+          <li><a href="#">REGISTRATION</a>
+    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+    <ul class="js-sub-menu sub-menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      
+     
+    </ul>
+  </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+    
+  
+</script>
+<br><br><br><br>
+<section class="main">
+
+    <br><br>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/artists/ed.jpg" height="400" width="400" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>Ed Sheeran</h1>
+                <h4>English singer-songwriter</h4>
+                <h5>Born: 17 February 1991</h5>
+                <h5>England</h5>
+            <p>
+                Edward Christopher Sheeran MBE (/ˈʃɪərən/; born 17 February 1991) is an English singer-songwriter. He has sold more than 150 million records worldwide, making him one of the world's best-selling music artists.[6] He has 84.5 million RIAA-certified units in the US,[7] and two of his albums are in the list of the best-selling albums in UK chart history: × at number 20, and ÷ at number 34. In December 2019, the Official Charts Company named him artist of the decade, with the most combined success in the UK album and singles charts in the 2010s.[8]
+
+Sheeran's debut album, + (pronounced "plus"), was released in September 2011 and topped the UK Albums Chart. It contained his first hit single "The A Team". In 2012, Sheeran won the Brit Awards for Best British Male Solo Artist and British Breakthrough Act. 
+            </p>
+            </div>
+        </div>
+<br><br>
+        <h2>Personal Details:</h2>
+        <p>
+            Sheeran began recording music in 2004 and independently released his first collection of work, tiled Spinning Man.[A] He has been friends with fellow English singer, Passenger, since he was 15, with the two playing the same gig in Cambridge.[36] He moved to London in 2008 and began playing in small venues. In 2008, he auditioned for the ITV series Britannia High.[37] He also opened for Nizlopi in Norwich in April 2008, after being one of their guitar technicians.[18] In the autumn of 2009, Sheeran began studying music at the Academy of Contemporary Music (ACM) in Guildford, Surrey as an undergraduate at the age 18,[38] but left without permission in the same year to support hip-hop artist Just Jack.[39] He released another EP in 2009, You Need Me, and also collaborated several times with Essex singer Leddra Chapman, including CeeLo Green's "Fuck You". In February 2010, Sheeran posted a video through SB.TV, and rapper Example invited Sheeran to tour with him. In the same month, he also released his critically acclaimed Loose Change EP, which featured his future debut single, "The A Team".[40]
+
+Sheeran began to be seen by more people over the internet through YouTube and his fan base expanded, with him also receiving praise from The Independent newspaper and Elton John.[41] He played a Station Session in St. Pancras International in June 2010.[42][43] Some of the episode is on their Facebook page[44] Sheeran also self-released two other EPs in 2010, Ed Sheeran: Live at the Bedford and Songs I Wrote with Amy, which is a collection of love songs he wrote in Wales with Amy Wadge.[45] When in Los Angeles in 2010, he was invited to perform at The Foxxhole, a club run by actor Jamie Foxx, which ended with an invitation to stay at Foxx's home.[46]
+
+On 8 January 2011, Sheeran released another independent EP, No. 5 Collaborations Project, featuring grime artists such as Wiley, Jme, Devlin, Sway and Ghetts.[47] With this EP, Sheeran gained mainstream attention for having reached number 2 in the iTunes chart without any promotion or label, selling over 7,000 copies in the first week.[48] Three months later, Sheeran put on a free show to fans at the Barfly in Camden Town. Over 1,000 fans turned up, so Sheeran played four different shows to ensure everyone saw a gig, including a gig outside on the street after the venue had closed. Later that month, Sheeran was signed to Asylum Records.[48]
+        </p>
+       <br>
+            <h2>Career Achievements:</h2>
+            <p>
+                Aslam began his career after forming the band Jal and released the song 'Aadat' with another contemporary musician Goher Mumtaz in 2003. The original version was written by Goher and sung by Aslam. During this initial period of the band, Aslam was the lead singer of Jal. He has mentioned in multiple interviews that he had recorded the song with his pocket money at the age of 17. The band released the song on the internet in 2003, which then went on to become a youth anthem.
+
+                After separation from Jal, Aslam released his first album titled Jal Pari, on 17 July 2004, produced by Sarmad Abdul Ghafoor, having 11 tracks, which was an instant hit.[21][22] The album also won the 4th Lux Style Awards in 2005 in the category of "Best Album".
+            </p>
+            
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+  
+  <div class="container-fluid footer" >
+      
+      <div class="row footer-row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+              <h1>Music World</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit quaerat rem unde fugit numquam illo facere obcaecati, eos illum asperiores. Omnis veniam culpa neque repellat quisquam impedit obcaecati quis!</p>
+          </div>
+              
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-center" style="padding-left: 50px;">
+              <h1>Usful Links </h1>
+              
+              <ul class="footer-List">
+                  <ul class="footer-List">
+                  <li><a href="Index.html">Home </a> </li>
+                  <li><a href="artist.html">Artists</a></li>
+                  <li><a href="album.html">Albums</a></li>
+                  <li><a href="instruments.html">Instruments</a></li>
+              </ul>
+              </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-right" style="padding-left: 50px;">
+              <h1>Contact</h1>
+              
+              <ul class="contact-List" style="list-style-type: none;">
+                  <li>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                 <span>
+                  +92 300-458-8459
+                 </span>
+                   </li>
+                   <br>
+                  <li>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                      <span> example123@gmail.com</span>
+                  </li>
+                  <br>
+                  <li>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                      <span>457, City street ave , Karachi <br>
+                          Pakistan</span>
+                  </li>
+                  <li>
+                      <span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</footer>
+
+<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

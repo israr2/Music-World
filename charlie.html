@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <title>Music World</title>
+  <meta charset="utf-8">
+ <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+ <link rel="stylesheet" href="style.css"></script>
+<!-- Boxicons CDN Link -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+  
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Index.html">Music World</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Music World</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        
+        <ul class="links">
+          <li><a href="Index.html">HOME</a></li>
+         <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rock.html">Rock</a></li>
+              <li><a href="jazz.html">Jazz</a></li>
+              <li><a href="pop.html">Pop</a></li>
+              <li><a href="rap.html">Rap</a></li>
+              <li><a href="classic.html">Classical</a></li>
+              <li><a href="instruments.html">Instruments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="artist.html">ARTISTS</a>
+          </li>
+          <li>
+                            <a href="album.html">ALBUMS</a>
+
+          </li>
+       
+          <li><a href="#">REGISTRATION</a>
+    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+    <ul class="js-sub-menu sub-menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      
+     
+    </ul>
+  </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+    
+  
+</script>
+<br><br><br><br>
+<section class="main">
+
+    <br><br>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/artists/Charlie.jpg" height="400" width="400" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>Charlie Puth</h1>
+                <h4>American singer</h4>
+                <h5>Born: December 2, 1991</h5>
+                <h5>America</h5>
+            <p>
+                Charles Otto Puth Jr. (/puːθ/; born December 2, 1991) is an American singer, songwriter, and record producer. His initial exposure came through the viral success of his song videos uploaded to YouTube.
+
+                After initially signing with eleveneleven after performing on The Ellen DeGeneres Show, Puth began contributing to songs and albums for other artists, as well as creating lite solo material and covers of popular songs. With primary intent on a solo career, Atlantic Records and Artist Partner Group eventually sought the artist and released his debut single, "Marvin Gaye" (featuring Meghan Trainor) in 2015.[3] His next single and first feature, "See You Again", which he co-wrote, co-produced, and performed with Atlantic label-mate Wiz Khalifa for the Furious 7 soundtrack as a tribute to actor Paul Walker.            </p>                
+            </div>
+        </div>
+<br><br>
+        <h2>Personal Details:</h2>
+        <p>
+            Charles Otto Puth Jr. was born December 2, 1991, in Rumson, New Jersey,[7] to Debra, a music teacher[8][9] who also wrote commercials for HBO,[10] and Charles Otto Puth Sr., a builder and real estate agent.[8] His father is Catholic[11] and his mother is Jewish.[12] He has two younger siblings, twins Stephen and Mikaela.[8]
+
+            As a two-year-old, Puth's right eyebrow was permanently scarred in a nearly fatal dog-bite incident.[13]
+            
+            Puth's mother introduced him to classical music and began teaching him the piano at age 4.[14] He started studying jazz at age 10[14] and participated in a summer youth jazz ensemble at Count Basie Theatre's Cool School[9] in Red Bank, New Jersey at 12.[15] He was hired by The Count Basie Theatre to play in a Charlie Brown production.[9] In grade six, he went door to door selling a Christmas album called Have a Merry Charlie Christmas that he had recorded and produced, making $600 in sales.[14][16]
+            
+            He attended the Holy Cross School, Rumson, and Forrestdale Middle School,[17] before graduating from the Rumson-Fair Haven Regional High School in 2010.[18] During his seventh grade to senior years, he attended Manhattan School of Music Pre-College[19] as a jazz piano major and a classical studies minor.[17][20] Puth graduated in 2013 from the Berklee College of Music, where he majored in music production and engineering.[21]
+        </p>
+        <br>
+            <h2>Career Achievements:</h2>
+            <p>
+                009–2014: Career beginnings
+In September 2009, he started his own YouTube channel, entitled Charlies Vlogs, posting comedy videos and acoustic covers.[22] In 2010, Puth released the music video of his first song, "These Are My Sexy Shades".[23] In December 2010, he released his debut extended play, The Otto Tunes, an independent release.[24] In 2011, he won an online video competition sponsored by Perez Hilton, Can You Sing?, with a version of Adele's "Someone like You" which he performed with Emily Luther.[19] In the same year Ellen DeGeneres announced that she had signed Puth and Luther to her label, eleveneleven, after seeing their performance of Adele's "Someone like You".[25] Puth and Luther had performed the song on the show.[26] In December 2012 he released a promotional single, "Break Again", with additional vocals by Emily Luther.[27] The music video was released days later.[28] On January 25, 2012, Puth and Luther performed the song and Lady Antebellum's "Need You Now" on The Ellen DeGeneres Show.[29] Puth also performed at an event supporting DKMS Delete Blood Cancer, the world's largest bone marrow donor center, in October 2012.[30] Puth left eleveneleven in late 2012.
+
+On October 23, 2013, he released his second independent extended play, Ego, to streaming online.[31][32] Puth was credited with the production and writing of songs and jingles for fellow YouTube personalities. He wrote the theme song for Shane Dawson's Shane and Friends podcast and skits, the intro jingle for the videos of the Vlogger family the SHAYTARDS, the original theme song for Charles Trippy's vlog Internet Killed Television, and a song for the tour and movie of YouTube group Our 2nd Life, as well as several singles for Our 2nd Life member Ricky Dillon. In 2014 he released the promotional single "L.U.V."[33] The music video was directed by Andrew Vallentine[34] In the same year, he co-wrote the song "Celebrate" on Pitbull's eighth studio album Globalization.[35]
+            </p>
+
+            
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+  
+  <div class="container-fluid footer" >
+      
+      <div class="row footer-row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+              <h1>Music World</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit quaerat rem unde fugit numquam illo facere obcaecati, eos illum asperiores. Omnis veniam culpa neque repellat quisquam impedit obcaecati quis!</p>
+          </div>
+              
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-center" style="padding-left: 50px;">
+              <h1>Usful Links </h1>
+              
+              <ul class="footer-List">
+                  <ul class="footer-List">
+                  <li><a href="Index.html">Home </a> </li>
+                  <li><a href="artist.html">Artists</a></li>
+                  <li><a href="album.html">Albums</a></li>
+                  <li><a href="instruments.html">Instruments</a></li>
+              </ul>
+              </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-right" style="padding-left: 50px;">
+              <h1>Contact</h1>
+              
+              <ul class="contact-List" style="list-style-type: none;">
+                  <li>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                 <span>
+                  +92 300-458-8459
+                 </span>
+                   </li>
+                   <br>
+                  <li>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                      <span> example123@gmail.com</span>
+                  </li>
+                  <br>
+                  <li>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                      <span>457, City street ave , Karachi <br>
+                          Pakistan</span>
+                  </li>
+                  <li>
+                      <span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</footer>
+
+<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

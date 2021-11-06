@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <title>Music World</title>
+  <meta charset="utf-8">
+ <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+ <link rel="stylesheet" href="style.css"></script>
+<!-- Boxicons CDN Link -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+  
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Index.html">Music World</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Music World</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        
+        <ul class="links">
+          <li><a href="Index.html">HOME</a></li>
+         <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rock.html">Rock</a></li>
+              <li><a href="jazz.html">Jazz</a></li>
+              <li><a href="pop.html">Pop</a></li>
+              <li><a href="rap.html">Rap</a></li>
+              <li><a href="classic.html">Classical</a></li>
+              <li><a href="instruments.html">Instruments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="artist.html">ARTISTS</a>
+          </li>
+          <li>
+                            <a href="album.html">ALBUMS</a>
+
+          </li>
+       
+          <li><a href="#">REGISTRATION</a>
+    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+    <ul class="js-sub-menu sub-menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      
+     
+    </ul>
+  </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+    
+  
+</script>
+<br><br><br><br>
+<section class="main">
+
+    <br><br>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/artists/justin.jpg" height="400" width="400" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>Justin Bieber</h1>
+                <h4> Canadian singer</h4>
+                <h5>Born:March 1, 1994</h5>
+                <h5>Lives in Canada</h5>
+            <p>
+                Justin Drew Bieber (/biːbər/; born March 1, 1994) is a Canadian singer. He was discovered by American record executive Scooter Braun and signed with RBMG Records in 2008, gaining recognition with the release of his debut seven-track EP My World (2009) and soon establishing himself as a teen idol.
+            </p>                
+            </div>
+        </div>
+<br><br>
+        <h2>Personal Details:</h2>
+        <p>
+            Bieber was born on March 1, 1994, at St Joseph's Hospital in London, Ontario,[18] and was raised in Stratford, Ontario.[19] He is the son of Jeremy Jack Bieber and Pattie Mallette, who were never married.[20] Mallette's mother Diane and stepfather Bruce helped her raise her son.[21] Bieber's ancestry includes French-Canadian, Irish, English, Scottish, and German.[22][23][24]
+
+Through his father, Jeremy, Bieber has three younger half-siblings. Jeremy and his ex-wife, Erin Wagner,[25] who broke up in 2014 after seven years together, have two children, daughter Jazmyn and son Jaxon.[26] Jeremy married his girlfriend Chelsey in February 2018, and they have a daughter named Bay.[27][28] Bieber also has a stepsister named Allie, the daughter of his stepmother.[29] Pattie worked a series of low-paying office jobs, raising Bieber as a single mother in low-income housing. Bieber has maintained contact with his father.[30]
+
+Bieber attended a French-language immersion elementary school in Stratford, the Jeanne Sauvé Catholic School.[21] Growing up, he learned to play the piano, drums, guitar, and trumpet.[19][31] He graduated from high school in Stratford, Ontario, the St. Michael Catholic Secondary School in 2012[32] with a 4.0 GPA.[33] In early 2007, aged 12, Bieber sang Ne-Yo's "So Sick" for a local singing competition in Stratford and was placed second.[31][34] Mallette posted a video of the performance on YouTube for their family and friends to see. She continued to upload videos of Bieber singing covers of various R&B songs, and Bieber's popularity on the site grew.[35] In the same year, Bieber busked shows in front of Avon Theatre steps with a rented guitar during tourism season.[36]
+        </p>
+        <br>
+            <h2>Career Achievements:</h2>
+            <p>
+                While searching for videos of a different singer, Scooter Braun, a former marketing executive of So So Def Recordings, clicked on one of Bieber's 2007 YouTube videos by accident.[30] Impressed, Braun tracked down the theatre Bieber was performing in, located Bieber's school, and finally contacted his mother Mallette, who was initially reluctant because of Braun's Judaism. She remembered praying, "God, I gave him to you. You could send me a Christian man, a Christian label!", and, "God, you don't want this Jewish kid to be Justin's man, do you?" However, church elders convinced her to let Bieber go with Braun. At age 13, Bieber went to Atlanta, Georgia, with Braun to record demo tapes.[30] Bieber began singing for Usher one week later.[37]
+
+Bieber was soon signed to Raymond Braun Media Group (RBMG), a joint venture between Braun and Usher.[38] Justin Timberlake was reportedly also in the running to sign Bieber but lost the bidding war to Usher, partly due to the idea that two associated Justins would confuse the market.[38][39]
+
+Usher then sought assistance in finding a label home for the artist from then manager Chris Hicks, who helped engineer an audition with his contact L.A. Reid of The Island Def Jam Music Group.[40] Reid signed Bieber to Island Records in October 2008 (resulting in a joint venture between RBMG and Island Records) and appointed Hicks as executive Vice-President of Def Jam, where he could manage Bieber's career at the label.[41][35][38][40] Bieber then moved to Atlanta with his mother to pursue further work with Braun and Usher.[38] Braun became Bieber's manager in 2008.[35]
+
+Bieber's first single, "One Time", was released to radio while Bieber was still recording his debut album.[42] The song reached number 12 on the Canadian Hot 100 during its first week of release in July 2009,[35] and peaked at number 17 on the Billboard Hot 100 chart in the United States. During fall 2009, it had success in international markets.[43] The song was certified platinum in Canada and the US and gold in Australia and New Zealand.[44][45][46] His first release, an extended play titled My World, was released on November 17, 2009. The album's second single, "One Less Lonely Girl", and two promotional singles, "Love Me" and "Favorite Girl", were released exclusively on the iTunes Store and charted within the top 40 of the US Billboard Hot 100.[43] As a result, he became the first solo artist to have four singles chart in the top 40 of the Hot 100 before the release of a debut album.[47]
+
+"One Less Lonely Girl" was later also released to radio and peaked within the top 20 in Canada and the US, and was certified gold in the latter.[43] Following the release of My World on December 5, 2009, Bieber became the first artist to have seven songs from a debut album chart on the Billboard Hot 100.[48] My World was eventually certified platinum in the US and double platinum in both Canada and the United Kingdom.[49][50][51] To promote the album, Bieber performed on several live shows such as mtvU's VMA 09 Tour, European program The Dome, YTV's The Next Star, The Today Show,[52][53] The Wendy Williams Show, Lopez Tonight, The Ellen DeGeneres Show, It's On with Alexa Chung, Good Morning America, Chelsea Lately, and BET's 106 & Park. Bieber also guest starred in an episode of True Jackson, VP in late 2009.[54]
+
+Bieber performed Ron Miller and Bryan Wells's "Someday at Christmas" for former US President Barack Obama and first lady Michelle Obama at the White House for Christmas in Washington, which aired on December 20, 2009, on US television broadcaster TNT.[55] Bieber was also one of the performers for Dick Clark's New Year's Rockin' Eve with Ryan Seacrest, on December 31, 2009.[56
+            </p>
+
+            
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+  
+  <div class="container-fluid footer" >
+      
+      <div class="row footer-row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+              <h1>Music World</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit quaerat rem unde fugit numquam illo facere obcaecati, eos illum asperiores. Omnis veniam culpa neque repellat quisquam impedit obcaecati quis!</p>
+          </div>
+              
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-center" style="padding-left: 50px;">
+              <h1>Usful Links </h1>
+              
+              <ul class="footer-List">
+                  <ul class="footer-List">
+                  <li><a href="Index.html">Home </a> </li>
+                  <li><a href="artist.html">Artists</a></li>
+                  <li><a href="album.html">Albums</a></li>
+                  <li><a href="instruments.html">Instruments</a></li>
+              </ul>
+              </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-right" style="padding-left: 50px;">
+              <h1>Contact</h1>
+              
+              <ul class="contact-List" style="list-style-type: none;">
+                  <li>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                 <span>
+                  +92 300-458-8459
+                 </span>
+                   </li>
+                   <br>
+                  <li>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                      <span> example123@gmail.com</span>
+                  </li>
+                  <br>
+                  <li>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                      <span>457, City street ave , Karachi <br>
+                          Pakistan</span>
+                  </li>
+                  <li>
+                      <span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</footer>
+
+<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

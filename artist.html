@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <title>Music World</title>
+  <meta charset="utf-8">
+ <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+ <link rel="stylesheet" href="style.css"></script>
+<!-- Boxicons CDN Link -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+  
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Index.html">Music World</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Music World</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        
+        <ul class="links">
+          <li><a href="Index.html">HOME</a></li>
+         <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rock.html">Rock</a></li>
+              <li><a href="jazz.html">Jazz</a></li>
+              <li><a href="pop.html">Pop</a></li>
+              <li><a href="rap.html">Rap</a></li>
+              <li><a href="classic.html">Classical</a></li>
+              <li><a href="instruments.html">Instruments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="artist.html">ARTISTS</a>
+          </li>
+          <li>
+                            <a href="album.html">ALBUMS</a>
+
+          </li>
+       
+          <li><a href="#">REGISTRATION</a>
+    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+    <ul class="js-sub-menu sub-menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      
+     
+    </ul>
+  </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+    
+  
+</script>
+<br><br><br><br>
+<section class="main">
+    <h1 class="heading">Artists</h1>
+    <br><br>
+    
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="card" style="width: 300px; background: #f1f0f0; padding: 5px; border-radius: 5px; box-shadow: #979797 5px 5px 15px;">
+                    <div class="card-body">
+                        <img src="images/artists/YoungBoy.jpg" height="200" width="200" alt="">
+                      <h2 class="card-title">YoungBoy</h2>
+                      <h6 class="card-subtitle mb-2 text-muted">American rapper</h6>
+                      <p class="card-text">Kentrell DeSean Gaulden (born October 20, 1999), known professionally as YoungBoy Never Broke Again (also known as NBA YoungBoy or simply YoungBoy), is an American rapper, singer, and songwriter....</p>
+                      <a href="youngboy.html">
+                        <button type="button" style="width: 100%;" class="btn btn-danger">Artist Details</button>
+                      </a>
+                          
+                      
+                    </div>
+                  </div>
+                  </div>
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card" style="width: 300px; background: #f1f0f0; padding: 5px; border-radius: 5px; box-shadow: #979797 5px 5px 15px;">
+                    <div class="card-body">
+                        <img src="images/artists/justin.jpg" height="200" width="300" alt="">
+                      <h2 class="card-title">Justin Bieber</h2>
+                      <h6 class="card-subtitle mb-2 text-muted">Canadian Singer</h6>
+                      <p class="card-text">Justin Drew Bieber (/biːbər/; born March 1, 1994) is a Canadian singer. He was discovered by American record executive Scooter Braun and signed with RBMG Records in 2008, gaining recognition with the release of his .....</p>
+                      
+                     <a href="justin.html">
+                        <button type="button" style="width: 100%;" class="btn btn-danger">Artist Details</button>
+                      </a>
+                      
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card" style="width: 300px; background: #f1f0f0; padding: 5px; border-radius: 5px; box-shadow: #979797 5px 5px 15px;">
+                        <div class="card-body">
+                            <img src="images/artists/ed.jpg" height="200" width="300" alt="">
+                          <h2 class="card-title">Ed Sheeran</h2>
+                          <h6 class="card-subtitle mb-2 text-muted">English rapper</h6>
+                          <p class="card-text">Edward Christopher Sheeran MBE (/ˈʃɪərən/; born 17 February 1991) is an English singer-songwriter. He has sold more than 150 million records worldwide, making him one of the world's best-selling music artists ...</p>
+                          
+                         <a href="Ed.html">
+                        <button type="button" style="width: 100%;" class="btn btn-danger">Artist Details</button>
+                      </a>
+                          
+                        </div>
+                      </div>
+                      </div>
+            </div>
+            <br><br><br>
+        <div class="row">
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card" style="width: 300px; background: #f1f0f0; padding: 5px; border-radius: 5px; box-shadow: #979797 5px 5px 15px;">
+                    <div class="card-body">
+                        <img src="images/artists/billie.jpg" height="200" width="300" alt="">
+                      <h2 class="card-title">Billie Eilish</h2>
+                      <h6 class="card-subtitle mb-2 text-muted">American Singer</h6>
+                      <p class="card-text">Billie Eilish Pirate Baird O'Connell (/ˈaɪlɪʃ/ EYE-lish;[1] born December 18, 2001) is an American singer and songwriter. She first gained public attention in 2015 with her debut single "Ocean Eyes", which was ....</p>
+                      
+                      <a href="billie.html">
+                        <button type="button" style="width: 100%;" class="btn btn-danger">Artist Details</button>
+                      </a>
+                      
+                    </div>
+                  </div>
+                  </div>
+             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card" style="width: 300px; background: #f1f0f0; padding: 5px; border-radius: 5px; box-shadow: #979797 5px 5px 15px;">
+                    <div class="card-body">
+                        <img src="images/artists/Atif.jpg" height="200" width="300" alt="">
+                      <h2 class="card-title">Atif Aslam</h2>
+                      <h6 class="card-subtitle mb-2 text-muted">Pakistani Singer</h6>
+                      <p class="card-text">Muhammad Atif Aslam (Urdu: محمد عاطف اسلم‎; born 12 March 1983; mostly referred to as Atif Aslam) is a Pakistani playback singer, song-writer, composer and an actor. Best known for his hit songs in the Pakistani and Indian film industries .....</p>
+                      
+                      <a href="atif.html">
+                        <button type="button" style="width: 100%;" class="btn btn-danger">Artist Details</button>
+                      </a>
+                      
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="card" style="width: 300px; background: #f1f0f0; padding: 5px; border-radius: 5px; box-shadow: #979797 5px 5px 15px;">
+                        <div class="card-body">
+                            <img src="images/artists/Charlie.jpg" height="200" width="300" alt="">
+                          <h2 class="card-title">Charlie Puth</h2>
+                          <h6 class="card-subtitle mb-2 text-muted">American Singer</h6>
+                          <p class="card-text">Charles Otto Puth Jr. (/puːθ/; born December 2, 1991) is an American singer, songwriter, and record producer. His initial exposure came through the viral success of his song videos uploaded to YouTube....</p>
+                          
+                         <a href="charlie.html">
+                        <button type="button" style="width: 100%;" class="btn btn-danger">Artist Details</button>
+                      </a>
+                          
+                        </div>
+                      </div>
+                      </div>
+            </div>
+        
+        </div>
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+  
+  <div class="container-fluid footer" >
+      
+      <div class="row footer-row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+              <h1>Music World</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit quaerat rem unde fugit numquam illo facere obcaecati, eos illum asperiores. Omnis veniam culpa neque repellat quisquam impedit obcaecati quis!</p>
+          </div>
+              
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-center" style="padding-left: 50px;">
+              <h1>Usful Links </h1>
+              
+              <ul class="footer-List">
+                  <li><a href="Index.html">Home </a> </li>
+                  <li><a href="artist.html">Artists</a></li>
+                  <li><a href="album.html">Albums</a></li>
+                  <li><a href="instruments.html">Instruments</a></li>
+              </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-right" style="padding-left: 50px;">
+              <h1>Contact</h1>
+              
+              <ul class="contact-List" style="list-style-type: none;">
+                  <li>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                 <span>
+                  +92 300-458-8459
+                 </span>
+                   </li>
+                   <br>
+                  <li>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                      <span> example123@gmail.com</span>
+                  </li>
+                  <br>
+                  <li>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                      <span>457, City street ave , Karachi <br>
+                          Pakistan</span>
+                  </li>
+                  <li>
+                      <span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</footer>
+
+<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

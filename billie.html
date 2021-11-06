@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <title>Music World</title>
+  <meta charset="utf-8">
+ <!-- <title> Responsive Drop Down Navigation Menu | CodingLab </title>-->
+ <link rel="stylesheet" href="style.css"></script>
+<!-- Boxicons CDN Link -->
+ <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+  
+
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="Index.html">Music World</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Music World</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        
+        <ul class="links">
+          <li><a href="Index.html">HOME</a></li>
+         <li>
+            <a href="#">MENU</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="rock.html">Rock</a></li>
+              <li><a href="jazz.html">Jazz</a></li>
+              <li><a href="pop.html">Pop</a></li>
+              <li><a href="rap.html">Rap</a></li>
+              <li><a href="classic.html">Classical</a></li>
+              <li><a href="instruments.html">Instruments</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="artist.html">ARTISTS</a>
+          </li>
+          <li>
+                            <a href="album.html">ALBUMS</a>
+
+          </li>
+       
+          <li><a href="#">REGISTRATION</a>
+    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+    <ul class="js-sub-menu sub-menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+      
+     
+    </ul>
+  </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      // search-box open close js code
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+// sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+    
+  
+</script>
+<br><br><br><br>
+<section class="main">
+
+    <br><br>
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="images/artists/billie.jpg" height="400" width="400" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>Billie Eilish</h1>
+                <h4>American singer and song writer</h4>
+                <h5>Born: December 18, 2001</h5>
+                <h5>America</h5>
+            <p>
+                Billie Eilish Pirate Baird O'Connell (/ˈaɪlɪʃ/ EYE-lish;[1] born December 18, 2001) is an American singer and songwriter. She first gained public attention in 2015 with her debut single "Ocean Eyes", which was subsequently released by Darkroom, a subsidiary of Interscope Records. The song was written and produced by her brother, Finneas O'Connell, with whom she frequently collaborates on music and in live shows. Her debut extended play, Don't Smile at Me (2017), was commercially successful and charted within the top 15 in the US, UK, Canada, and Australia.
+
+Eilish's first studio album, When We All Fall Asleep, Where Do We Go? (2019), debuted atop the US Billboard 200 and reached number one in the UK. It was one of the best-selling albums of 2019, buoyed by the success of its fifth single and Eilish's first number-one hit on the Billboard Hot 100, "Bad Guy". 
+            </p>
+            </div>
+        </div>
+<br><br>
+        <h2>Personal Details:</h2>
+        <p>
+            Billie Eilish Pirate Baird O'Connell was born in Los Angeles, California on December 18, 2001.[6] She is the daughter of actress and former theater troupe teacher Maggie Baird,[7][8] and actor Patrick O'Connell,[9] both of whom are also musicians,[10][11] and work on Eilish's tours.[10][12] Eilish is of Irish and Scottish descent.[13] She was conceived via in vitro fertilization.[14] Her middle name, Eilish, was originally meant to be her first name, while Pirate was to be her middle name.[15] She was brought up in the Highland Park neighborhood of Los Angeles.[16][17]
+
+            Eilish and her brother Finneas were homeschooled, a decision their parents made to spend time with them and give them the freedom to pursue their interests.[9][12] Baird taught Eilish and Finneas the basics of songwriting.[18] Eilish said her brother and mother inspired her to get into music.[19] Their parents encouraged the siblings to express themselves and explore whatever they wanted, including art, dancing, and acting.[10][18] Eilish also performed at talent shows and joined the Los Angeles Children's Chorus at age eight.[20][18] She wrote her first "real" song at age 11 for her mother's songwriting class. The song is about the zombie apocalypse, inspired by the television series The Walking Dead from which she took script lines and episode titles that she added to the song as part of the assignment.[21][19] Eilish had gone on some acting auditions, which she disliked; however, she enjoyed recording background dialogue for crowd scenes and worked on the films Diary of a Wimpy Kid, Ramona and Beezus, and the X-Men series.[18]        </p>
+       <br>
+            <h2>Career Achievements:</h2>
+            <p>
+                Aslam began his career after forming the band Jal and released the song 'Aadat' with another contemporary musician Goher Mumtaz in 2003. The original version was written by Goher and sung by Aslam. During this initial period of the band, Aslam was the lead singer of Jal. He has mentioned in multiple interviews that he had recorded the song with his pocket money at the age of 17. The band released the song on the internet in 2003, which then went on to become a youth anthem.
+
+                After separation from Jal, Aslam released his first album titled Jal Pari, on 17 July 2004, produced by Sarmad Abdul Ghafoor, having 11 tracks, which was an instant hit.[21][22] The album also won the 4th Lux Style Awards in 2005 in the category of "Best Album".
+            </p>
+            
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+  
+  <div class="container-fluid footer" >
+      
+      <div class="row footer-row">
+          
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-left">
+              <h1>Music World</h1>
+              
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias impedit quaerat rem unde fugit numquam illo facere obcaecati, eos illum asperiores. Omnis veniam culpa neque repellat quisquam impedit obcaecati quis!</p>
+          </div>
+              
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-center" style="padding-left: 50px;">
+              <h1>Usful Links </h1>
+              
+              <ul class="footer-List">
+                  <ul class="footer-List">
+                  <li><a href="Index.html">Home </a> </li>
+                  <li><a href="artist.html">Artists</a></li>
+                  <li><a href="album.html">Albums</a></li>
+                  <li><a href="instruments.html">Instruments</a></li>
+              </ul>
+              </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-right" style="padding-left: 50px;">
+              <h1>Contact</h1>
+              
+              <ul class="contact-List" style="list-style-type: none;">
+                  <li>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+                 <span>
+                  +92 300-458-8459
+                 </span>
+                   </li>
+                   <br>
+                  <li>
+                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                      <span> example123@gmail.com</span>
+                  </li>
+                  <br>
+                  <li>
+                      <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                      <span>457, City street ave , Karachi <br>
+                          Pakistan</span>
+                  </li>
+                  <li>
+                      <span class="glyphicon glyphicon-icon" aria-hidden="true"></span>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+      
+  </div>
+  
+</footer>
+
+<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>
